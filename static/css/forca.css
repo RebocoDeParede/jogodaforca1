@@ -1,0 +1,238 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1px;
+    padding: 1px;
+    background-image: url(https://i.redd.it/random-scenes-from-inside-of-hogwarts-castle-to-show-off-v0-dhnod3lovf5c1.jpg?width=1280&format=pjpg&auto=webp&s=5909e94407d4050372e8fbfeff0811f8de252505);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    line-height: 1.6;
+    text-align: center;
+}
+.conteiner{
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.piscando {
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0% { color: red; }
+    16% { color: orange; }
+    33% { color: yellow; }
+    50% { color: green; }
+    66% { color: blue; }
+    83% { color: indigo; }
+    100% { color: violet; }
+
+}
+
+.logojogo{
+    padding: 10px 20px;
+    background-color: #353d44;
+    color:#f8f9fa;
+    border-radius: 50px;
+}
+
+
+#dica{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    background-color: rgb(173, 176, 179, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+#palavra{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    background-color:rgb(173, 176, 179, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+#guess{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.btn-primary{
+    background-color: #555555;
+    color:#ffffff
+}
+
+.btn-primary:hover{
+    background-color:#343a40;
+    color:#ffffff
+}
+
+.btn-secondary{
+    background-color: azure;
+    color: #000000;
+}
+
+.btn-secondary:hover{
+    background-color: #000000;
+    color:azure
+}
+
+#status,
+#attempts{
+    font-size: 1.1em;
+    color: #495057;
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #000000(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+}
+
+#forca{
+    width: 150px;
+    height: 250px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#forca div{
+    background-color: rgb(53, 53, 100);
+    position: absolute;
+    
+}
+
+footer{
+    background-color: #6e6e6e;
+    color:#ffffff;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    margin-top: auto;
+    line-height: 1.6;
+    width: 100%;
+}
+
+header{
+    background-color: rgb(88, 87, 87);
+    color: #555555;
+    padding: 0 0;
+} 
+
+img.harry{
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.display-4{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn{
+        flex: 1 1 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    #forca{
+        width: 120px;
+        height: 200px;
+    }
+
+    footer,
+    header{
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    img.harry{
+        max-width: 30%;
+    }
+
+    .display-4{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px){
+    .container{
+        width: 95%;
+        padding: 10px
+    }
+
+    #forca{
+        width: 100px;
+        height: 180px;
+    }
+
+    .btn{
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer,
+    header{
+        font-size:14px;
+    }
+
+    img.harry{
+        max-width: 40%;
+    }
+
+    .display-4{
+        font-size: 1.5rem;
+    }
+}
+
